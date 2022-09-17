@@ -1,0 +1,10 @@
+configuration {
+	MODI: "drun";
+	width: 25;
+	show-icons: true;
+	icon-theme: "papirus";
+	lines: 10;
+	fake-transparency: true;
+	sidebar-mode: true;
+	font: "mono 12 Verdana";
+}
