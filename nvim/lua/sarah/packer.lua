@@ -15,4 +15,5 @@ return require('packer').startup(function(use)
   use 'steelsojka/pears.nvim'
   use 'jistr/vim-nerdtree-tabs'
   use 'rust-lang/rust.vim'
+  use 'catppuccin/nvim'
 end)

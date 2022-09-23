@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/sarah/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
+  nvim = {
+    loaded = true,
+    path = "/home/sarah/.local/share/nvim/site/pack/packer/start/nvim",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/sarah/.local/share/nvim/site/pack/packer/start/packer.nvim",
