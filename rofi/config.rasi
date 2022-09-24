@@ -1,10 +1,83 @@
 configuration {
 	MODI: "drun";
-	width: 25;
-	show-icons: true;
-	icon-theme: "papirus";
-	lines: 10;
 	fake-transparency: true;
-	sidebar-mode: true;
 	font: "mono 12 Verdana";
+    modi: "run,window,windowcd,drun";
+  
+  combi-modi: "window,windowcd,run";
+  width: 900px;
+      border-color: #2e343f;
+   show-icons: true;
+  icon-theme: "Papirus";
+    display-drun: "";
+  drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+  location: 0;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+       display-window: " 﩯  Window ";
+     display-Network: " 󰤨  Network"; 
+    sidebar-mode: true;
 }
+
+* {
+  background-color: #A020F0;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+  width: 1000px;
+  font: "Verdana 12";
+  vertical-align: 0.5;
+  show-icons: true;
+  icon-theme: "Papirus";
+  drun-display-format: "{name}";
+ 
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [entry];
+  background-color:#A020F0;
+}
+
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: true;
+}
+
+element {
+  border: 0 0 1px 0;
+  padding: 0px;     
+  children: [element-icon, element-text];
+  background-color: #A020F0;
+}
+
+
+element selected.active {
+   background-color: #880ED4;
+   text-color: #8ca0aa;
+}
+
+element selected.normal {
+    background-color: #880ED4;
+  
+}
+
+element-icon { 
+  size: 4ch ;
+  padding: 10px;
+ }
+
+element selected {
+  background-color: #A020F0;
+}
+
+
+
+
+
+window {
+        height: 60%;
+}
+    
