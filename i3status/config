@@ -16,15 +16,14 @@ general {
 
 order += "disk /"
 order += "disk /home"
-order += "wireless wlan0"
+order += "wireless wlp4s0"
 order += "ethernet tun0"
-order += "cpu_temperature 0"
 order += "battery 0"
 order += "load"
 order += "volume master"
 order += "tztime local"
 
-wireless wlan0 {
+wireless wlp4s0 {
         format_up = "  %essid (%ip/%quality/%bitrate)"
         format_down = "✗"
 }
@@ -48,7 +47,7 @@ battery 0 {
         status_bat = "  BAT"
         status_unk = ""
         status_full = "☻ FULL"
-        path = "/sys/class/power_supply/BAT%d/uevent"
+        path = "/sys/class/power_supply/BAT1/uevent"
         low_threshold = 10
 }
 
@@ -57,7 +56,7 @@ run_watch VPN {
 }
 
 tztime local {
-        format = "%d %b %Y %H:%M:%S"
+        format = "%d %b %Y %H:%M"
 }
 
 load {
