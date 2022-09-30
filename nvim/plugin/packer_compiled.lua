@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/sarah/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
+  ["go.nvim"] = {
+    loaded = true,
+    path = "/home/sarah/.local/share/nvim/site/pack/packer/start/go.nvim",
+    url = "https://github.com/ray-x/go.nvim"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/sarah/.local/share/nvim/site/pack/packer/start/nerdtree",

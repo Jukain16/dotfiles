@@ -220,7 +220,12 @@ bindsym XF86TouchpadToggle exec /.config/toggletouchpad.sh # toggle touchpad
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
 
-exec --no-startup-id xautolock -time 2 -locker i3lock &
+exec --no-startup-id xautolock -time 5 -locker i3lock &
 bindsym $mod+F1 exec --no-startup-id i3lock -c 0000
-exec_always --no-startup-id dunst
-exec-always --nostart-up-id arandr
+exec_always --no-startup-id dunst --config ~/.config/dunst/dunstrc
+
+# Brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+
+
